@@ -7,8 +7,8 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
-
     public static void task1() {
         //task number 1
         Scanner num = new Scanner(System.in);
@@ -97,5 +97,16 @@ public class Main {
         }else if (deliveryDistance >= 60 && deliveryDistance < 100){
             System.out.println("The deliver will take three days");
         }
+    }
+    public static void task5(){
+        //task 5
+        System.out.println("\n");
+        Scanner dist = new Scanner(System.in);
+        System.out.println("Enter the number of month");
+        int monthNumber = dist.nextInt();
+        if(monthNumber >=1 && monthNumber <= 2 || monthNumber == 12){System.out.println("It must be snowy outside, it's winter!");}
+        else if(monthNumber >= 3 && monthNumber <= 5){System.out.println("It's Spring outside!");}
+        else if(monthNumber >= 6 && monthNumber <= 8){System.out.println("Summer!!!!");}
+        else if(monthNumber >= 9 && monthNumber <=11){System.out.println("It's autumn!");}
     }
 }
