@@ -6,6 +6,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1() {
@@ -81,4 +82,20 @@ public class Main {
             System.out.println("The year is not leap");
         }
     } // done
+    public static void task4(){
+        //task 4
+        System.out.println("\n");
+        Scanner dist = new Scanner(System.in);
+        System.out.println("Enter the distance from the bank, to your home!");
+        int deliveryDistance = dist.nextInt();
+        if(deliveryDistance >= 100) {
+            System.out.println("The distance is so far away from the bank!");
+        }else if(deliveryDistance < 20){
+            System.out.println("The deliver will take one day!");
+        }else if(deliveryDistance >=20 && deliveryDistance < 60){
+            System.out.println("The deliver will take two days");
+        }else if (deliveryDistance >= 60 && deliveryDistance < 100){
+            System.out.println("The deliver will take three days");
+        }
+    }
 }
